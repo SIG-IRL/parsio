@@ -1,0 +1,17 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "parsio"
+version = "0.1.0"
+description = "A Persian NLP toolkit"
+requires-python = ">=3.8"
+dependencies = []
+license = { file = "../LICENSE" }
+
+[tool.maturin]
+module-name = "parsio._parsio"
+bindings = "pyo3"
+python-source = "src"
+manifest-path = "../core/Cargo.toml"
