@@ -1,0 +1,13 @@
+[package]
+name = "parsio-core"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "parsio_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.24.0", features = ["extension-module"]}
+regex = "1.11.1"
+unicode-segmentation = "1.12.0"
